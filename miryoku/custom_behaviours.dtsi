@@ -1,0 +1,20 @@
+/ {
+  behaviors {
+    dot_rpar: dot_rightparenthesis {
+      compatible = "zmk,behavior-mod-morph";
+      label = "DOT_RIGHTPARENTHESIS";
+      #binding-cells = <0>;
+      bindings = <&kp DOT>, <&kp RPAR>;
+      mods = <(MOD_LSFT|MOD_RSFT)>;
+      // keep-mods = <(MOD_RSFT)>;
+    };
+    comma_lpar: comma_leftparenthesis {
+        compatible = "zmk,behavior-mod-morph";
+        label = "COMMA_LEFTPARENTHESIS";
+        #binding-cells = <0>;
+        bindings = <&kp COMMA>, <&kp LPAR>;
+        mods = <(MOD_LSFT|MOD_RSFT)>;
+        // keep-mods = <(MOD_RSFT)>;
+    };
+  };
+};
