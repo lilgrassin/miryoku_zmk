@@ -8,6 +8,14 @@
       mods = <(MOD_LSFT|MOD_RSFT)>;
       // keep-mods = <(MOD_RSFT)>;
     };
+    dot_rpar_c: dot_rightparenthesis_cancel {
+      compatible = "zmk,behavior-mod-morph";
+      label = "DOT_RIGHTPARENTHESIS_CANCEL";
+      #binding-cells = <0>;
+      bindings = <&dot_rpar>, <&kp DOT>;
+      mods = <(MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT|MOD_LGUI|MOD_RGUI)>;
+      keep-mods = <(MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT|MOD_LGUI|MOD_RGUI)>;
+    };
     comma_lpar: comma_leftparenthesis {
         compatible = "zmk,behavior-mod-morph";
         label = "COMMA_LEFTPARENTHESIS";
@@ -16,5 +24,14 @@
         mods = <(MOD_LSFT|MOD_RSFT)>;
         // keep-mods = <(MOD_RSFT)>;
     };
+    comma_lpar_c: comma_leftparenthesis_cancel {
+      compatible = "zmk,behavior-mod-morph";
+      label = "COMMA_LEFTPARENTHESIS_CANCEL";
+      #binding-cells = <0>;
+      bindings = <&comma_lpar>, <&kp COMMA>;
+      mods = <(MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT|MOD_LGUI|MOD_RGUI)>;
+      keep-mods = <(MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT|MOD_LGUI|MOD_RGUI)>;
+    };
+
   };
 };
